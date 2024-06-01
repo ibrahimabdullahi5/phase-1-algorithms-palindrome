@@ -1,6 +1,16 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(string) {
+  // create a container to store reversed name
+  let reverseName=string.split("").reverse().join("");
+  // write the condition
+  if(string===reverseName){
+    return true
+  }else{
+    return false
+  }
 }
+// call the function to display the result in the console
+console.log(isPalindrome("abba"))
+
 
 /* 
   Add your pseudocode here
